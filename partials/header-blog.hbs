@@ -2,9 +2,9 @@
   <nav class="site-width">
     {{#if @blog.logo}}<a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
     <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
-    <h3 class="blog-description">{{@blog.description}}</h3>
+    <h3 class="blog-description"><b><span style="color: #2d91ea;">&#123; </span></b> {{@blog.description}} <b><span style="color: #2d91ea;"> &#125;</span></b></h3>
 
-    {{!> "social"}}
+    {{> "social"}}
   </nav>
 
   <aside class="scroll-down">
